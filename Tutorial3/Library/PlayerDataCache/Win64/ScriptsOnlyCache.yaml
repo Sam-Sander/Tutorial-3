@@ -1,21 +1,23 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BGScroller
     - DestroyByBoundary
     - DestroyByContact
     - DestroyByTime
+    - EvasiveManeuver
     - GameController
     - Mover
     - PlayerController
     - RandomRotator
+    - Readme
+    - WeaponController
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
-    UnityEditor.TestRunner.dll:
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -59,32 +61,40 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9324}
+      Script: {instanceID: 9240}
     - Class: 114
-      Script: {instanceID: 9330}
+      Script: {instanceID: 9326}
     - Class: 114
-      Script: {instanceID: 9336}
+      Script: {instanceID: 9332}
     - Class: 114
-      Script: {instanceID: 9380}
+      Script: {instanceID: 9338}
     - Class: 114
       Script: {instanceID: 9382}
     - Class: 114
-      Script: {instanceID: 9596}
+      Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 9628}
+      Script: {instanceID: 9598}
     - Class: 114
-      Script: {instanceID: 9888}
+      Script: {instanceID: 9630}
     - Class: 114
-      Script: {instanceID: 9928}
+      Script: {instanceID: 9890}
     - Class: 114
-      Script: {instanceID: 9984}
+      Script: {instanceID: 9930}
     - Class: 114
-      Script: {instanceID: 10388}
+      Script: {instanceID: 9986}
     - Class: 114
-      Script: {instanceID: 10562}
+      Script: {instanceID: 9990}
+    - Class: 114
+      Script: {instanceID: 10392}
+    - Class: 114
+      Script: {instanceID: 10394}
+    - Class: 114
+      Script: {instanceID: 10568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -119,6 +129,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: f26f7886243dd4667924205bcb2cbe1f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WeaponController
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -643,7 +659,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 5c54d781d4e44e8d49d6d9710a8d061c
+      Hash: b36f085b5695abcb9b2aad414f33dc0c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -659,6 +675,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mover
+  - hash:
+      serializedVersion: 2
+      Hash: be2d1663d6bc8ce39ce9c8dea6a963c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BGScroller
   - hash:
       serializedVersion: 2
       Hash: 3aeec2416520303994f9d66901c73317
@@ -775,6 +797,12 @@ ScriptsOnlyBuild:
     className: DestroyByBoundary
   - hash:
       serializedVersion: 2
+      Hash: 757d56d0910fdc18d03e5b801da35a3f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EvasiveManeuver
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -848,4 +876,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/saman/Documents/For School/Github+Unity/UnityTutorial3/Tutorial-3/Tutorial3/Tutorial3Build/Tutorial3.exe
+  playerPath: C:/Users/saman/Documents/For School/Github+Unity/UnityTutorial3/Tutorial-3/Tutorial3/Challenge3Build/Tutorial3.exe
