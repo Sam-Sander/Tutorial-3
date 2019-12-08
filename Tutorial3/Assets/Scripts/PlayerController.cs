@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Boundary
@@ -9,23 +10,37 @@ public class Boundary
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     public float tilt;
     public Boundary boundary;
 
     public GameObject shot;
     public Transform shotSpawn;
+    public Transform tripleLeft;
+    public Transform tripleRight;
     public float fireRate;
     public AudioSource musicSource;
     public AudioClip shootSound;
+    public GameObject shield;
+    public GameObject target;
+    public Transform player;
+    public Text speedText;
+    private float timer;
 
     private float nextFire;
+    private bool three;
+    public float speedCount;
 
     private Rigidbody rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        three = false;
+        shield.SetActive(false);
+        speed = 10;
+        speedText.text = "";
+        timer = 0;
     }
 
     void Update()
@@ -34,8 +49,24 @@ public class PlayerController : MonoBehaviour
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+            if (three == true)
+            {
+                Instantiate(shot, tripleLeft.position, tripleLeft.rotation);
+                Instantiate(shot, tripleRight.position, tripleRight.rotation);
+            }
             musicSource.clip = shootSound;
             musicSource.Play();
+        }
+        speedText.text = "Speed:" + speed.ToString();
+
+        if (three == true)
+        {
+            timer = timer + 1;
+            if (timer == 400)
+            {
+                three = false;
+                timer = 0;
+            }
         }
     }
 
@@ -55,5 +86,35 @@ public class PlayerController : MonoBehaviour
         );
 
         rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
+    }
+
+    void LateUpdate()
+    {
+        shield.transform.position = new Vector3(target.transform.position.x, target.transform.position.y, target.transform.position.z);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Shield"))
+        {
+            other.gameObject.SetActive(false);
+            shield.SetActive(true);
+        }
+        else if (other.gameObject.CompareTag("Triple"))
+        {
+            other.gameObject.SetActive(false);
+            three = true;
+        }
+        else if (other.gameObject.CompareTag("Speed"))
+        {
+            other.gameObject.SetActive(false);
+            speed = speed + 3;
+            SpeedCount();
+        }
+    }
+    
+    private void SpeedCount()
+    {
+        speedCount = speedCount + 1;
     }
 }

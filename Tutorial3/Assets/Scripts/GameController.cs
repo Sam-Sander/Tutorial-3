@@ -16,11 +16,18 @@ public class GameController : MonoBehaviour
     public Text RestartText;
     public Text GameOverText;
     public Text winText;
+    public Text creditWin;
+    public Text creditLose;
 
     private bool gameOver;
     private bool restart;
     private int score;
 
+    public AudioSource musicSource;
+    public AudioClip background;
+    public AudioClip win;
+    public AudioClip lose;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +36,8 @@ public class GameController : MonoBehaviour
         RestartText.text = "";
         GameOverText.text = "";
         winText.text = "";
+        creditLose.text = "";
+        creditWin.text = "";
         score = 0;
         UpdateScore();
         StartCoroutine (SpawnWaves());
@@ -89,12 +98,23 @@ public class GameController : MonoBehaviour
             winText.text = "You win!";
             gameOver = true;
             restart = true;
+            musicSource.Stop();
+            musicSource.clip = win;
+            musicSource.Play();
+            creditWin.text = "Song: 'Can't Stop Winning' by Jonathan Shaw (www.jshaw.co.uk)";
             GameOver();
         }
     }
 
     public void GameOver ()
     {
+        if (score < 100)
+        {
+            musicSource.Stop();
+            musicSource.clip = lose;
+            musicSource.Play();
+            creditLose.text = "Song: 'Lost Signal' by PetterTheSturgeon on OpenGameArt";
+        }
         GameOverText.text = "Game Over! Game created by Samantha Sander!";
         gameOver = true;
     }

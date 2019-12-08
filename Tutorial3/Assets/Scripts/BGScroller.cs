@@ -6,6 +6,7 @@ public class BGScroller : MonoBehaviour
 {
     public float scrollSpeed;
     public float tileSizeZ;
+    private PlayerController playerController;
 
     private Vector3 startPosition;
     
@@ -13,6 +14,11 @@ public class BGScroller : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
+        GameObject playerControllerObject = GameObject.FindWithTag("Player");
+        if (playerControllerObject != null)
+        {
+            playerController = playerControllerObject.GetComponent<PlayerController>();
+        }
     }
 
     // Update is called once per frame
@@ -20,5 +26,11 @@ public class BGScroller : MonoBehaviour
     {
         float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSizeZ);
         transform.position = startPosition + Vector3.forward * newPosition;
+        SpeedUpdate();
+    }
+
+    void SpeedUpdate()
+    {
+        scrollSpeed = -playerController.speedCount;
     }
 }

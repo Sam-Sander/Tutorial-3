@@ -8,16 +8,20 @@ ScriptsOnlyBuild:
     - EvasiveManeuver
     - GameController
     - Mover
+    - ParticleSpeed
+    - PickupRotator
     - PlayerController
     - RandomRotator
-    - Readme
     - WeaponController
+    - collide
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -90,6 +94,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10394}
     - Class: 114
       Script: {instanceID: 10568}
+    - Class: 114
+      Script: {instanceID: 14232}
+    - Class: 114
+      Script: {instanceID: 23848}
+    - Class: 114
+      Script: {instanceID: 29588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -659,7 +669,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: b36f085b5695abcb9b2aad414f33dc0c
+      Hash: ad0a97e04c2913c2832d12db1059372f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -845,7 +855,7 @@ ScriptsOnlyBuild:
     className: Done_BGScroller
   - hash:
       serializedVersion: 2
-      Hash: 885b301354b9dd88a70e762f724a2748
+      Hash: 80821ef3a2e349332ab013e8645d620c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -873,7 +883,25 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PickupRotator
+  - hash:
+      serializedVersion: 2
+      Hash: ea37daa492f489d5876950798e7f94d2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: collide
+  - hash:
+      serializedVersion: 2
+      Hash: 639fd77f1dc923d170d985c83e2c0850
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticleSpeed
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/saman/Documents/For School/Github+Unity/UnityTutorial3/Tutorial-3/Tutorial3/Challenge3Build/Tutorial3.exe
+  playerPath: C:/Users/saman/Documents/For School/Github+Unity/UnityTutorial3/Tutorial-3/Tutorial3/FinalProjectBuild/Tutorial3.exe

@@ -44,10 +44,10 @@ MonoBehaviour:
     y: 30
     width: 1368
     height: 780
-  m_MinSize: {x: 683, y: 494}
-  m_MaxSize: {x: 14004, y: 14044}
+  m_MinSize: {x: 681, y: 494}
+  m_MaxSize: {x: 14002, y: 14044}
   vertical: 0
-  controlID: 83
+  controlID: 79
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 780
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -401,20 +401,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\saman\Documents\For School\Github+Unity\UnityTutorial3\Tutorial-3\Tutorial3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ae290000
-    m_LastClickedID: 10670
-    m_ExpandedIDs: 00000000ae2900007c2a000000ca9a3b
+    scrollPos: {x: 0, y: 11}
+    m_SelectedIDs: 842c0000
+    m_LastClickedID: 11396
+    m_ExpandedIDs: 00000000442b0000fe2b0000842c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -442,7 +442,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae2900007c2a0000
+    m_ExpandedIDs: 00000000442b0000fe2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000203a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -564,21 +564,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 64f5ffff9af5ffff90f6ffff70fbffffce2d0000
+      m_ExpandedIDs: 94c9fdffcac9fdffc2cafdff92d1ffff00faffff102f00004a2f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: WinCredit
+        m_OriginalName: WinCredit
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -138600
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -655,13 +655,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.1621716, y: -0.010361222, z: 0.0017019974, w: 0.9867133}
+    m_Target: {x: 0.078816235, y: -0.001495335, z: 0.00011823224, w: 0.9968887}
     speed: 2
-    m_Value: {x: 0.16365044, y: -0.01035859, z: 0.0017175266, w: 0.98646253}
+    m_Value: {x: 0.07881619, y: -0.0014953341, z: 0.000118232165, w: 0.9968881}
   m_Size:
-    m_Target: 1784.7479
+    m_Target: 631.51776
     speed: 2
-    m_Value: 1784.7477
+    m_Value: 631.51776
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -733,7 +733,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -746,18 +746,18 @@ MonoBehaviour:
       y: 17
       width: 830
       height: 396
-    m_Scale: {x: 0.88, y: 0.88}
-    m_Translation: {x: 415, y: 198}
+    m_Scale: {x: 0.90639997, y: 0.90639997}
+    m_Translation: {x: 415, y: 195.51001}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -471.5909
-      y: -225
-      width: 943.1818
-      height: 450
+      x: -457.85526
+      y: -215.6995
+      width: 915.7105
+      height: 436.89322
     m_MinimalGUI: 1
   m_defaultScale: 0.88
   m_TargetTexture: {fileID: 0}

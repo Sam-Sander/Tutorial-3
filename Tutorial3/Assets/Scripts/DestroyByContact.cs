@@ -11,7 +11,7 @@ public class DestroyByContact : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag ("Boundary") || other.CompareTag ("Enemy"))
+        if (other.CompareTag ("Boundary") || other.CompareTag ("Enemy") || other.CompareTag("Shield") || other.CompareTag("Triple") || other.CompareTag("Speed"))
         {
             return;
         }
@@ -20,14 +20,17 @@ public class DestroyByContact : MonoBehaviour
         {
             Instantiate(explosion, transform.position, transform.rotation);
         }
-        
+
         if (other.tag == "Player")
         {
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
             gameController.GameOver();
         }
         gameController.AddScore(scoreValue);
-        Destroy(other.gameObject);
+        if (other.tag != "ShieldCol")
+        {
+            Destroy(other.gameObject);
+        }
         Destroy(gameObject);
     }
 
